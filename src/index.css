@@ -1,0 +1,68 @@
+/* tailwindcss directives - VS Code CSS language server will show warnings but they can be safely ignored */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for enhanced aesthetics */
+@layer base {
+  body {
+    @apply antialiased text-gray-800;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins tracking-tight;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply relative inline-block font-bold text-navy after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-1 after:bg-gradient-to-r after:from-gold after:to-yellow-400;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-gold to-yellow-400 hover:from-yellow-400 hover:to-gold text-navy px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg flex items-center justify-center;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-white hover:bg-white hover:text-navy px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg flex items-center justify-center;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-gold to-yellow-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gradient-to-b from-yellow-400 to-gold;
+}
