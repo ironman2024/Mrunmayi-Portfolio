@@ -311,7 +311,7 @@ function App() {
                     <div>
                       <h4 className="font-poppins font-semibold text-xl text-navy mb-2">Bachelor of Business Administration (BBA)</h4>
                       <p className="text-gold font-medium mb-2">Human Resource Management Specialization</p>
-                      <p className="text-gray-600 mb-2">Savitribai Phule Pune University | 2020-2025</p>
+                      <p className="text-gray-600 mb-2">Savitribai Phule Pune University | 2022-2025</p>
                       <p className="text-gray-600 mb-2">College: Shree Siddhivinayak Arts & Commerce Mahila Mahavidyalaya, Pune</p>
                       <p className="text-navy font-semibold text-lg">CGPA: 7.03 | Grade: A</p>
                     </div>
